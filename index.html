@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defence of India | Official Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">🛡 DEFENCE INDIA</h2>
+
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#forces">Our Forces</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#recruitment">Recruitment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>GUARDIANS OF THE NATION</h1>
+        <p>Strength, Courage and Commitment</p>
+        <p>Honouring the brave men and women who protect our nation.</p>
+        <a href="#forces" class="btn">Explore Our Forces</a>
+    </div>
+</section>
+
+<section class="about">
+    <h2>ABOUT DEFENCE INDIA</h2>
+    <p>
+        India's Armed Forces stand as a symbol of courage,
+        discipline and national pride. The Army, Navy and Air
+        Force work together to safeguard the nation's sovereignty.
+    </p>
+</section>
+
+<section class="forces" id="forces">
+    <h2>OUR DEFENCE FORCES</h2>
+
+    <div class="force-container">
+
+        <div class="force-card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600"
+                 alt="Military technology">
+            <h3>Indian Army</h3>
+            <p>Protecting the nation on land with courage and dedication.</p>
+            <button onclick="showInfo('Indian Army')">Learn More</button>
+        </div>
+
+        <div class="force-card">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600"
+                 alt="Naval ship at sea">
+            <h3>Indian Navy</h3>
+            <p>Safeguarding maritime interests and securing our seas.</p>
+            <button onclick="showInfo('Indian Navy')">Learn More</button>
+        </div>
+
+        <div class="force-card">
+            <img src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=600"
+                 alt="Military aircraft">
+            <h3>Indian Air Force</h3>
+            <p>Defending Indian airspace with advanced aviation capabilities.</p>
+            <button onclick="showInfo('Indian Air Force')">Learn More</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="stats">
+    <h2>OUR COMMITMENT</h2>
+
+    <div class="stats-container">
+        <div>
+            <h1 class="counter" data-target="3">0</h1>
+            <p>Armed Forces</p>
+        </div>
+
+        <div>
+            <h1 class="counter" data-target="365">0</h1>
+            <p>Days of Dedication</p>
+        </div>
+
+        <div>
+            <h1 class="counter" data-target="1">0</h1>
+            <p>National Mission</p>
+        </div>
+    </div>
+</section>
+
+<section class="news" id="news">
+    <h2>LATEST UPDATES</h2>
+
+    <div class="news-box">
+        <h3>Defence Technology</h3>
+        <p>Explore innovation and development in India's defence sector.</p>
+    </div>
+
+    <div class="news-box">
+        <h3>National Security</h3>
+        <p>Learn about the importance of national security and preparedness.</p>
+    </div>
+
+    <div class="news-box">
+        <h3>Military Training</h3>
+        <p>Discover the discipline and training of our armed forces.</p>
+    </div>
+</section>
+
+<section class="recruitment" id="recruitment">
+    <h2>JOIN THE DEFENCE FORCES</h2>
+    <p>Serve the nation with honour, courage and commitment.</p>
+    <a href="https://joinindianarmy.nic.in/" target="_blank"
+       class="btn">Explore Recruitment</a>
+</section>
+
+<section class="contact" id="contact">
+    <h2>CONTACT US</h2>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+</section>
+
+<footer>
+    <h3>🛡 DEFENCE INDIA</h3>
+    <p>Strength • Honour • Service</p>
+    <p>© 2026 Defence India Demo Project. Not an official government website.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

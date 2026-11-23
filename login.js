@@ -39,8 +39,6 @@ document.getElementById("registerForm")
 
     event.preventDefault();
 
-    const name = document.getElementById("regName").value;
-    const email = document.getElementById("regEmail").value;
     const password = document.getElementById("regPassword").value;
     const confirm = document.getElementById("confirmPassword").value;
 
@@ -52,14 +50,13 @@ document.getElementById("registerForm")
         return;
     }
 
-    // Demo only: no account is actually created.
     message.style.color = "green";
-    message.innerText = "Registration demo successful! You can now login.";
+    message.innerText = "Registration successful! You can now login.";
 
     this.reset();
 });
 
-// Login demo
+// Login demo with homepage redirect
 
 document.getElementById("loginForm")
 .addEventListener("submit", function(event) {
@@ -72,17 +69,23 @@ document.getElementById("loginForm")
     const message = document.getElementById("message");
 
     // Demo credentials
+
     if (email === "demo@gmail.com" && password === "Defence123") {
 
         message.style.color = "green";
-        message.innerText = "Login successful! Welcome to Defence India.";
+        message.innerText = "Login successful! Redirecting to Home Page...";
+
+        setTimeout(function() {
+            window.location.href = "home.html";
+        }, 1000);
 
     } else {
 
         message.style.color = "red";
-        message.innerText = "Invalid demo email or password.";
+        message.innerText = "Invalid demo email or password!";
 
     }
+
 });
 
 // Forgot password demo
